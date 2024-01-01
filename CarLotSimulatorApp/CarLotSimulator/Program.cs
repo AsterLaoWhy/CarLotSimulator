@@ -28,14 +28,17 @@ namespace CarLotSimulator
             carOne.MakeEngineNoise(carOne.EngineNoise);
             carOne.MakeHonkNoise(carOne.HonkNoise);
             ParkingLot.ParkingLot.Add(carOne);
+            Console.WriteLine($"There is {CarLot.numberOfCars} car in the lot");
             //Car 2
             var carTwo = new Car() { year = 2018, make = "Lambo", model = "Hurrican", EngineNoise = "VROOM VROOOM", HonkNoise = "Kank Kank", IsDrivable = true };
+            Console.WriteLine($"There are {CarLot.numberOfCars} cars in the lot");
             carOne.MakeEngineNoise(carTwo.EngineNoise);
             carOne.MakeHonkNoise(carTwo.HonkNoise);
             ParkingLot.ParkingLot.Add(carTwo);
             //Car 3
             //*************BONUS*************// I'm not sure what the third way is. Is the third way just multi line of the second???
             var carThree = new Car() { year = 1999, make = "Ford", model = "Tarus", EngineNoise = "GRRRRRRRRRR GRRRRRRRRRR", HonkNoise = "WAAAAAAAAAAAH WAAAAAAAAAAH", IsDrivable = false };
+            Console.WriteLine($"There are {CarLot.numberOfCars} cars in the lot");
             carOne.MakeEngineNoise(carThree.EngineNoise);
             carOne.MakeHonkNoise(carThree.HonkNoise);
             ParkingLot.ParkingLot.Add(carThree);

@@ -4,7 +4,7 @@ public class Car
 {
 	public Car()
 	{
-		
+		CarLot.numberOfCars++;
 	}
     public int year { get; set; }
 	public string make { get; set; }

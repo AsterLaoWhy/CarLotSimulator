@@ -6,4 +6,6 @@ public class CarLot
 	{
 	}
 	public List<Car> ParkingLot = new List<Car>();
+	public static int numberOfCars { get; set; }
+
 }
